@@ -1,0 +1,29 @@
+version: '3.9'
+
+services:
+ 
+  ansible:
+    image: ansible:latest
+    working_dir: /home/admin/ansible
+    build: ./ansible
+    ports: 
+      - 4444:22
+    volumes: 
+      - ./ansible/files:/home/admin/ansible
+      - ./ansible/app:/home/admin/app
+    tty: true
+    stdin_open: true
+
+  nginx:
+    image: server-1:latest
+    build: ./nginx
+    ports:
+      - 4443:22
+      - 8000:80
+
+  web:
+    image: server-2:latest
+    build: ./nginx
+    ports:
+    - 4442:22
+    - 3000:3000

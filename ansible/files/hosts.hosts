@@ -1,0 +1,5 @@
+[server]
+  server_ngnix ansible_host=nginx ansible_ssh_user=admin ansible_ssh_pass=password
+
+[web]
+  app_web ansible_host=web ansible_ssh_user=admin ansible_ssh_pass=password

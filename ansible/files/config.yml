@@ -1,0 +1,14 @@
+---
+- name: Nginx config
+  become: yes
+  hosts: [server]
+  roles:
+    - nginx
+
+- name: Web app config
+  become: yes
+  hosts: [web]
+  roles:
+    - app
+
+...

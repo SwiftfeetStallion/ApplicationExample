@@ -1,5 +1,5 @@
 [server]
-  server_ngnix ansible_host=nginx ansible_ssh_user=admin ansible_ssh_pass=password
+  server_ngnix ansible_host=jenkins_slave1 ansible_ssh_user=admin ansible_ssh_pass=securepassword
 
 [web]
-  app_web ansible_host=web ansible_ssh_user=admin ansible_ssh_pass=password
+  app_web ansible_host=jenkins_slave2 ansible_ssh_user=admin ansible_ssh_pass=securepassword

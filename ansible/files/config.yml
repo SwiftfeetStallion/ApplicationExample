@@ -1,7 +1,6 @@
 ---
 - name: Nginx config
-  become: no
-  gather_facts: no
+  become: yes
   hosts: [server]
   roles:
     - nginx

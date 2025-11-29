@@ -1,6 +1,6 @@
 ---
 - name: Nginx config
-  become: yes
+  become: no
   hosts: [server]
   roles:
     - nginx

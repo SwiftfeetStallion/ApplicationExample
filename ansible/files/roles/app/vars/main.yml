@@ -2,4 +2,3 @@ web_port: 3000
 node_version: "20"
 ansible_distribution_release: "focal"
 ansible_become_password: password
-app_path: ./ansible/app/

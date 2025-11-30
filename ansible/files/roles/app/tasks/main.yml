@@ -22,7 +22,7 @@
 
 - name: Copy source dir
   copy:
-    src: "{{ app_path }}"
+    src: "../../../../app/"
     dest: /home/admin/app/
 
 - name: Make install.sh executable
